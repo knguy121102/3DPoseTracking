@@ -88,4 +88,13 @@ Feel free to submit issues and enhancement requests!
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Working with Branches
+
+This project uses Git branches for feature development and bug fixes. To work on a new feature:
+
+1. Create a new branch: `git checkout -b feature-name`
+2. Make your changes
+3. Commit and push: `git push -u origin feature-name`
+4. Create a Pull Request when ready to merge 
