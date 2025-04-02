@@ -25,7 +25,13 @@ This project demonstrates how to reconstruct 3D points from corresponding 2D poi
 - NumPy
 - Matplotlib
 
-## Installation
+## Installation Notes
+
+### Prerequisites
+- Python 3.7 or higher
+- pip (Python package installer)
+
+### Step-by-Step Installation
 
 1. Clone the repository:
 ```bash
@@ -33,10 +39,26 @@ git clone https://github.com/yourusername/3d-triangulation.git
 cd 3d-triangulation
 ```
 
-2. Install the required packages:
+2. Create a virtual environment (recommended):
 ```bash
-pip install numpy opencv-python matplotlib
+python -m venv venv
+source venv/bin/activate  # On Windows, use: venv\Scripts\activate
 ```
+
+3. Install the required packages:
+```bash
+pip install -r requirements.txt
+```
+
+### Troubleshooting
+- If you encounter OpenCV installation issues, try:
+  ```bash
+  pip install opencv-python-headless
+  ```
+- For matplotlib display issues on remote servers:
+  ```bash
+  export MPLBACKEND=Agg
+  ```
 
 ## Usage
 
